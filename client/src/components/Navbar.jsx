@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { TbMenu3 } from "react-icons/tb";
 
 function Navbar() {
@@ -7,9 +7,11 @@ function Navbar() {
     <header>
       <div className="flex justify-between items-center bg-green-400 px-6 py-4 md:px-20 lg:px-20">
         <div className="flex justify-center items-center">
-          <p className="text-white font-bold text-2xl">
-            Fooddy<span className="text-4xl">.</span>
-          </p>
+          <Link to="/">
+            <p className="text-white font-bold text-2xl">
+              Fooddy<span className="text-4xl">.</span>
+            </p>
+          </Link>
         </div>
         <nav className="hidden md:flex lg:flex">
           <ul className="flex justify-center items-center text-white gap-6 text-lg font-medium">
